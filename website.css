@@ -1,0 +1,261 @@
+* {
+        margin: 0;
+        padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+.navbar {
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            align-items: center;
+            position: relative;
+}
+
+.navbar::before {
+            content: "";
+            position: absolute;
+            background-color: rgba(0,0,0,0.5);
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+}
+
+.navbar ul {
+            display: flex;
+            list-style: none;
+}
+
+.navbar ul li {
+            font-size: 1.1rem;
+}
+
+.navbar ul li a{
+            padding: 5px 20px;
+            text-decoration: none;
+            color: white;
+}
+
+.navbar ul li a:hover {
+            border-bottom: 2px solid black;
+}
+
+#home {
+            display: flex;
+            flex-direction: column;
+            height: 650px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: #00000083;
+}
+
+#home::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 700px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+} 
+
+.heading {
+
+            color: white;
+            font-size: 3rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            transform: scale(1,1.3);
+
+
+
+}
+
+
+/* Portfolio */
+#portfolio {
+            display: flex;
+            flex-direction: column;
+            background-color: #313840;
+}
+
+#portfolio h1 {
+            margin: 50px;
+}
+
+.gallary {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pimg{
+                height: 220px;
+                width: 220px;
+                border-radius: 5px;
+                margin: 10px;
+                border: 2px solid #313840;
+}
+
+.pimg:hover {
+                cursor: pointer;
+                border: 2px solid white;
+}
+
+
+
+/* Eduction */
+#eduction {
+                display: flex;
+                flex-direction: column;
+                background: #313840;
+                padding: 40px;
+}
+
+#eduction h1 {
+                margin-top: 35px;
+                margin-bottom: 35px;
+
+}
+.headingEdu{
+    margin-top: 5px;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    transform: scale(1,1.3);
+}
+
+.column {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+}
+.box {
+            height: 220px;
+            width: 220px;
+            background-color: white;
+            border-radius: 15px;
+            margin: 10px;
+            padding: 40px;
+}
+.box h2 {
+            color: black;
+            font-size: 2rem;
+            margin-bottom: 30px;
+}
+.box p {
+            color: #888;
+            font-size: 1.2rem;
+}
+
+
+/* About */
+#about {
+            display: flex;
+            flex-direction: column;
+           
+
+}
+.abouth1 {
+            margin-top: 45px;
+            color: black;
+            font-size: 3rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            transform: scale(1,1.3); 
+}
+
+.aboutdiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
+            margin-bottom: 70px;
+}
+
+.aboutdiv img {
+                width: 300px;
+                height: 300px;
+                margin: 20px;
+                border-radius: 50%;
+
+}
+
+.text {
+            width: 50%;
+            padding: 50px;
+            align-items: center;
+            
+}
+.text h1{
+        margin-bottom: 20px;
+}
+
+
+
+/* Contact me */
+
+.contact-section{
+    background: #313840;
+    padding: 80px 0;
+    text-align: center;
+}
+.inner-width{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 30px;
+}
+.contact-section h1{
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+.name,.email,.message{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: #888;
+    padding: 10px 6px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.name{
+    float: left;
+    width: 270px;
+}
+.email{
+    float: right;
+    width: 270px;
+}
+.message{
+    min-width: 100%;
+    max-width: 100%;
+}
+.touch{
+    margin-top: 40px;
+    border: 1px solid #70a1ff;
+    padding: 12px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.touch:hover{
+    background: #70a1ff;
+}
